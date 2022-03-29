@@ -1,4 +1,4 @@
-
+// 实现symbol polyfill  参考 https://github.com/medikoo/es6-symbol/blob/master/polyfill.js
 const GlobalSymbolKeyforValue = {};
 
 
