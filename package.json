@@ -1,0 +1,25 @@
+{
+  "name": "homework",
+  "version": "1.0.0",
+  "description": "三期作业",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/automaticly/homework.git"
+  },
+  "author": "bai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/automaticly/homework/issues"
+  },
+  "homepage": "https://github.com/automaticly/homework#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint": "^8.12.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}

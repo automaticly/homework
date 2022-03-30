@@ -1,6 +1,9 @@
 
 # 三期作业
 
+# day3
+1. 编程题：https://bigfrontend.dev/zh/problem/implement-Promise-allSettled
+2. 算法题：https://leetcode-cn.com/problems/design-a-stack-with-increment-operation/
 # day2
 1. 算法：https://leetcode-cn.com/problems/shortest-distance-to-a-character
 2. 手写：实现symbol polyfill
