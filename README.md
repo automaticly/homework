@@ -1,6 +1,10 @@
 
 # 三期作业
 
+# day4 
+1. 手写题：https://bigfrontend.dev/zh/problem/implement-Object.is
+2. 算法题：https://leetcode-cn.com/problems/decode-string/
+
 # day3
 1. 编程题：https://bigfrontend.dev/zh/problem/implement-Promise-allSettled
 2. 算法题：https://leetcode-cn.com/problems/design-a-stack-with-increment-operation/
