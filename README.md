@@ -1,5 +1,8 @@
 
 # 三期作业
+# day8
+1.算法题：https://leetcode-cn.com/problems/swap-nodes-in-pairs/
+2.手写题：https://bigfrontend.dev/zh/problem/implement-your-own-Object-create
 
 # day7
 算法题：https://leetcode-cn.com/problems/rotate-list/

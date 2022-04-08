@@ -18,6 +18,7 @@ module.exports = {
   rules: {
     'no-plusplus': 'off',
     'no-unused-vars': 'off',
+    'no-param-reassign': 'off',
     indent: ['error', 4],
   },
 };
