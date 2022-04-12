@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: cadetblue;
+            border-radius: 5px;
+            cursor: grab;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app"></div>
+    <script>
+        const app = document.getElementsByClassName('app')[0];
+        function dragBox(box) {
+            function getCss(ele, prop) {
+                return parseInt(getComputedStyle(ele)[prop]);
+            }
+            let initX, initY
+            let dragAble = false;
+            let boxLeft = getCss(box, 'left');
+            let boxTop = getCss(box, 'top');
+
+            box.addEventListener('mousedown', function (e) {
+                dragAble = true;
+                initX = e.clientX;
+                initY = e.clientY;
+                box.style.cursor = "grabbing"
+            }, false)
+
+            document.addEventListener('mousemove', function (e) {
+                if (!dragAble) {
+                    return;
+                }
+                const disX = e.clientX - initX;
+                const disY = e.clientY - initY;
+                box.style.left = boxLeft + disX + 'px';
+                box.style.top = boxTop + disY + 'px';
+            })
+
+            box.addEventListener('mouseup', function (e) {
+                dragAble = false;
+                boxLeft = getCss(box, 'left');
+                boxTop = getCss(box, 'top');
+                box.style.cursor = "grab"
+            })
+        }
+        dragBox(app);
+    </script>
+</body>
+
+</html>

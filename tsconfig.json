@@ -1,6 +1,8 @@
 {
     "compilerOptions": {
         "allowJs": true,
-        "target": "ESnext"
-    }
+        "target": "ESnext",
+        "outDir": "./"
+    },
+    "exclude": ["node_modules"]
 }
