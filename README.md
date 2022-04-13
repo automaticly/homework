@@ -1,6 +1,12 @@
 
 # 三期作业
 
+# day11
+1.算法题：https://leetcode-cn.com/problems/linked-list-cycle-ii/
+
+2.手写题：https://bigfrontend.dev/zh/problem/implement-Promise-any
+
+
 # day10
 1.算法题：https://leetcode-cn.com/problems/intersection-of-two-linked-lists/
 2.手写题：实现一个可以拖拽的DIV
