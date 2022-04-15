@@ -1,5 +1,9 @@
 
 # 三期作业
+# day2
+1.算法题：https://leetcode-cn.com/problems/lru-cache/
+
+2.手写题：https://bigfrontend.dev/problem/implement-Promise-race
 
 # day11
 1.算法题：https://leetcode-cn.com/problems/linked-list-cycle-ii/
