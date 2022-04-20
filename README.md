@@ -1,6 +1,9 @@
 
 # 三期作业
 
+# day16 
+1.手写算法：https://leetcode-cn.com/problems/find-bottom-left-tree-value/
+2.手写题：链式调用
 # day15
 1.手写算法：https://leetcode-cn.com/problems/sum-root-to-leaf-numbers/
 2.手写题：https://bigfrontend.dev/zh/problem/remove-characters
