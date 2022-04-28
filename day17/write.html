@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <ul></ul>
+
+    <script>
+        const target = document.getElementsByTagName('ul')[0];
+        const length = 10000;
+        const piece = 20;
+        const totalCount = Math.ceil(length / piece);
+        let countRender = 0;
+        const render = () => {
+            const fragment = document.createDocumentFragment();
+            for (let index = 0; index < 20; index++) {
+                const li = document.createElement('li');
+                li.innerHTML = Math.random();
+                fragment.appendChild(li)
+            }
+            target.appendChild(fragment);
+            countRender++;
+            if (countRender < totalCount) {
+                console.log(countRender);
+                requestAnimationFrame(render)
+            }
+        }
+        render();
+    </script>
+</body>
+
+</html>

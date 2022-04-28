@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="a" class="124">
+        <div>
+            <div>hhasd1</div>
+            <p>
+                <img src="sad12" />
+            </p>
+        </div>
+        <p>1243</p>
+    </h1>
+    <script>
+        const dom2json = (id) => {
+            const dom = document.getElementById(id);
+            const domStr = dom.outerHTML;
+            const _2json = (str) => {
+                const nodes = [];
+                const reg = new RegExp(/<(\w+)( [^>]+)*>([\w\W]*)<\/\1>/g)
+                let res = reg.exec(str);
+                if (!res) {
+                    return str;
+                }
+                while (res) {
+                    nodes.push({
+                        tag: res[1],
+                        attribute: res[2] ? res[2].split(' ').reduce((pre, cur, index) => {
+                            const [key, value] = cur.split('=');
+                            if (key) {
+                                pre[key] = value.replace(/\"/g, '')
+                            }
+
+                            return pre;
+                        }, {}) : null,
+                        children: _2json(res[3])
+                    })
+                    res = reg.exec(str);
+                }
+                return nodes;
+            }
+            return _2json(domStr)[0]
+        }
+
+        console.log(dom2json('a'));
+
+    </script>
+</body>
+
+</html>
