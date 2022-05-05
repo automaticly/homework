@@ -1,6 +1,16 @@
 
 # 三期作业
 
+# day25
+1.手写算法：https://leetcode-cn.com/problems/middle-of-the-linked-list/
+
+2.手写题: https://bigfrontend.dev/zh/problem/two-way-binding
+
+# day24
+1.手写算法：https://binarysearch.com/problems/Delete-Sublist-to-Make-Sum-Divisible-By-K
+
+2.手写题: https://bigfrontend.dev/zh/typescript/implement-Partial-T
+
 # day23
 1.手写算法：https://leetcode-cn.com/problems/substring-with-concatenation-of-all-words
 
